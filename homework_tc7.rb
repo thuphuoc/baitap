@@ -2,6 +2,7 @@ require'selenium-webdriver'
 require'Webdrivers'
 driver=Selenium::WebDriver.for:chrome
 driver.get(' https://itmscoaching.herokuapp.com/form')
+driver.manage.window.maximize
 driver.find_element(id:"first-name").send_keys('iTMS')
 sleep 2
 driver.find_element(id:"last-name").send_keys('Coaching')
